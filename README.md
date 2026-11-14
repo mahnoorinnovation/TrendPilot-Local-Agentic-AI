@@ -1,4 +1,4 @@
-# TrendPilot - Local Agentic AI Content Assistant
+﻿# TrendPilot - Local Agentic AI Content Assistant
 
 ## 1. Project Overview
 
