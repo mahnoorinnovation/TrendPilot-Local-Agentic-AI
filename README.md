@@ -1,4 +1,4 @@
-﻿# TrendPilot ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Local Agentic AI Assistant
+﻿# TrendPilot - Local Agentic AI Assistant
 
 ## 1. Project Overview
 
