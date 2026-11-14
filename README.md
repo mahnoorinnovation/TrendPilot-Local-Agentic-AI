@@ -1,4 +1,4 @@
-﻿# TrendPilot – Local Agentic AI Assistant
+# TrendPilot Ã¢â‚¬â€œ Local Agentic AI Assistant
 
 ## 1. Project Overview
 
@@ -51,32 +51,34 @@ Unlike a basic chatbot, TrendPilot follows an agentic workflow by planning tasks
 
 ```text
 agentic_ai_task_2/
-│
-├── app/
-│   ├── main.py
-│   ├── agent.py
-│   ├── tools.py
-│   ├── memory.py
-│   └── prompts.py
-│
-├── outputs/
-│   └── saved_results/
-│
-├── tests/
-│   └── test_cases.md
-│
-├── screenshots/
-│   ├── ollama_running.png
-│   ├── demo_output.png
-│   └── saved_file_output.png
-│
-├── report/
-│   ├── final_report.pdf
-│   └── generate_report.py
-│
-├── README.md
-├── requirements.txt
-└── demo.py
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ app/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ main.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ agent.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ tools.py
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ memory.py
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ prompts.py
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ outputs/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ generated_posts/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ generated_scripts/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ saved_results/
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ tests/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ test_cases.md
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ screenshots/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ollama_running.png
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ demo_output.png
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ saved_file_output.png
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ report/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ final_report.pdf
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ generate_report.py
+Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ README.md
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ requirements.txt
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ demo.py
 ```
 
 ## 7. Installation and Setup
@@ -156,6 +158,49 @@ TrendPilot uses a local language model through Ollama. Prompts are processed by 
 
 ## 14. Internship Information
 
-**Program:** AIRI Team – PITB AI Internship  
-**Task:** Agentic AI Assistant – Task 2  
-**Project:** TrendPilot – Local Agentic AI Assistant
+**Program:** AIRI Team - PITB AI Internship
+**Task:** Agentic AI Assistant - Task 2
+**Project:** TrendPilot Ã¢â‚¬â€œ Local Agentic AI Assistant
+
+## 15. What I Learned
+
+- Running a local language model using Ollama and Gemma 3:4B.
+- Connecting Python applications with the Ollama API using Requests.
+- Understanding agent planning and tool execution.
+- Organizing content generation, review, and file-saving tools.
+- Implementing JSON-based memory.
+- Testing AI applications and analyzing errors.
+- Understanding the importance of human review and fact-checking.
+
+## 16. LinkedIn Project Summary
+
+**TrendPilot - Local Agentic AI Content Assistant**
+
+TrendPilot is a local Agentic AI project developed using Python, Ollama, and Gemma 3:4B.
+
+The application accepts a topic, platform, tone, and output type. It creates an execution plan, generates social media content, reviews the output, saves it as a Markdown file, and stores records in JSON memory.
+
+The project demonstrates practical implementation of local LLM integration, agent workflows, tool usage, memory management, testing, and error analysis.
+
+**Demo:** Run `python demo.py`
+
+**Repository:** TrendPilot-Local-Agentic-AI
+
+## 17. LinkedIn Post
+
+I am pleased to share my project, **TrendPilot - Local Agentic AI Content Assistant**, developed as part of the AIRI Team PITB AI Internship Task 2.
+
+Built using Python, Ollama, and Gemma 3:4B, TrendPilot demonstrates a local Agentic AI workflow that plans tasks, generates social media content, reviews results, manages memory, and saves outputs locally.
+
+Key implementation areas:
+
+- Local LLM integration with Ollama
+- Agent planning and tool execution
+- Content generation and review
+- JSON-based memory management
+- Markdown file saving
+- Testing and error analysis across 10 test cases
+
+This project helped me gain practical experience in building and testing local Agentic AI applications.
+
+#AgenticAI #ArtificialIntelligence #Python #Ollama #LLM #PITB

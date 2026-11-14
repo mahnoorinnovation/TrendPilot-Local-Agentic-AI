@@ -1,4 +1,4 @@
-import os
+﻿import os
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib.pagesizes import A4
@@ -236,7 +236,7 @@ objectives = [
 ]
 
 for item in objectives:
-    add_body("• " + item)
+    add_body("â€¢ " + item)
 
 
 # ==================================================
@@ -405,7 +405,7 @@ limitations = [
 ]
 
 for item in limitations:
-    add_body("• " + item)
+    add_body("â€¢ " + item)
 
 
 # ==================================================
@@ -444,6 +444,69 @@ structure_data = [
 add_table(structure_data, [2.3 * inch, 3.9 * inch])
 
 
+
+# ==================================================
+# 14. WHAT I LEARNED
+# ==================================================
+
+add_heading("14. What I Learned")
+
+learning_points = [
+    "How to run a local language model using Ollama and Gemma 3:4B.",
+    "How to connect a Python application to the Ollama API using Requests.",
+    "How an agentic workflow uses planning and tools to complete tasks.",
+    "How to organize content generation, review, and file-saving functions.",
+    "How to implement JSON-based memory for storing previous results.",
+    "How to test an AI application and analyze failures.",
+    "Why human review and fact-checking are important for AI-generated content."
+]
+
+for item in learning_points:
+    add_body("&#8226; " + item)
+
+
+# ==================================================
+# 15. FUTURE IMPROVEMENTS
+# ==================================================
+
+add_heading("15. Future Improvements")
+
+future_points = [
+    "Develop a Streamlit interface for easier interaction.",
+    "Improve platform-specific content generation and review.",
+    "Add user feedback to improve future generated results.",
+    "Introduce more detailed memory search and management.",
+    "Add optional export formats such as PDF."
+]
+
+for item in future_points:
+    add_body("&#8226; " + item)
+
+
+# ==================================================
+# 16. LINKEDIN PORTFOLIO SUMMARY
+# ==================================================
+
+add_heading("16. LinkedIn Portfolio Summary")
+
+add_body(
+    "TrendPilot is a local Agentic AI content assistant built with Python, "
+    "Ollama, and Gemma 3:4B. It accepts a topic, platform, tone, and output "
+    "type, then plans the task, generates social media content, reviews "
+    "the result, saves it as a Markdown file, and stores a record in JSON "
+    "memory. The project demonstrates practical work with local LLM "
+    "integration, agent workflows, tool usage, testing, and error analysis."
+)
+
+add_body(
+    "<b>Demo:</b> Command Line Interface (CLI), launched using "
+    "<font name='Courier'>python demo.py</font>."
+)
+
+add_body(
+    "<b>Repository:</b> TrendPilot-Local-Agentic-AI"
+)
+
 # ==================================================
 # BUILD PDF
 # ==================================================
@@ -456,3 +519,5 @@ doc.build(
 
 print("Professional report generated successfully!")
 print("PDF location:", OUTPUT_FILE)
+
+
