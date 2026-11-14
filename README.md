@@ -154,8 +154,4 @@ It documents the project overview, workflow, tools, testing, error analysis, scr
 
 TrendPilot uses a local language model through Ollama. Prompts are processed by the local model rather than requiring a hosted LLM API.
 
-## 14. Internship Information
 
-**Program:** AIRI Team – PITB AI Internship  
-**Task:** Agentic AI Assistant – Task 2  
-**Project:** TrendPilot – Local Agentic AI Assistant
