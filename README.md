@@ -1,34 +1,38 @@
-﻿# TrendPilot - Local Agentic AI Assistant
+# TrendPilot - Local Agentic AI Content Assistant
 
 ## 1. Project Overview
 
-TrendPilot is a local Agentic AI assistant developed as part of the AIRI Team PITB AI Internship Task 2.
+TrendPilot is a local Agentic AI Content Assistant developed as part of the AIRI Team PITB AI Internship Task 2.
 
-It uses Ollama with the Gemma 3:4B language model to generate structured social media content based on a user's topic, selected platform, tone, and output type.
+The application uses Ollama with the Gemma 3:4B language model to generate structured social media content based on the user's topic, selected platform, preferred tone, and output type.
 
-Unlike a basic chatbot, TrendPilot follows an agentic workflow by planning tasks, using multiple tools, reviewing generated content, managing memory, and saving final results locally.
+TrendPilot demonstrates an agentic workflow that includes task planning, content generation, content review, memory management, and local file saving.
+
+Unlike a basic chatbot, the application organizes these activities into a structured workflow and stores generated results locally for future reference.
 
 ## 2. Technologies Used
 
-- Python
-- Ollama
-- Gemma 3:4B
-- Requests
-- JSON
-- Markdown
-- ReportLab (for PDF report generation)
+- **Programming Language:** Python
+- **Local LLM Runtime:** Ollama
+- **Language Model:** Gemma 3:4B
+- **API Communication:** Requests
+- **Memory Storage:** JSON
+- **Output Format:** Markdown
+- **PDF Generation:** ReportLab
 
 ## 3. Key Features
 
-- **Trend Idea Generator:** Generates creative content ideas.
-- **Caption Writer:** Creates platform-specific captions.
-- **Hashtag Generator:** Suggests relevant hashtags.
-- **Reel Script Generator:** Creates short-form video scripts.
-- **Content Reviewer:** Reviews generated content and suggests improvements.
+- **Trend Idea Generator:** Generates creative social media content ideas.
+- **Caption Writer:** Creates captions according to the selected platform and tone.
+- **Hashtag Generator:** Suggests relevant hashtags for generated content.
+- **Reel Script Generator:** Generates short-form video scripts.
+- **Content Reviewer:** Reviews generated content and provides improvement suggestions.
 - **File Saver:** Saves generated results as Markdown files.
-- **Memory Management:** Stores and retrieves previous outputs.
+- **Memory Management:** Stores and retrieves previous outputs using JSON-based memory.
 
 ## 4. Supported Platforms
+
+TrendPilot supports content generation for:
 
 - Instagram
 - LinkedIn
@@ -38,18 +42,21 @@ Unlike a basic chatbot, TrendPilot follows an agentic workflow by planning tasks
 
 ## 5. Agent Workflow
 
-1. User enters a topic, platform, tone, and output type.
-2. The agent understands the user's request.
-3. The agent creates a content generation plan.
-4. It selects and calls the required tools.
-5. The content is generated using the local LLM.
-6. The Content Reviewer checks the generated output.
-7. The File Saver stores the final result.
-8. The agent returns the generated content and saved file path.
+The application follows a structured workflow:
+
+1. The user enters a topic, platform, tone, and output type.
+2. The agent processes the user's request.
+3. A content generation plan is prepared.
+4. The required content generation functionality is executed.
+5. Content is generated using the local Gemma 3:4B model through Ollama.
+6. The generated content is reviewed.
+7. The result is saved locally using the File Saver functionality.
+8. The application returns the generated content and saved file information.
 
 ## 6. Project Structure
 
-```agentic_ai_task_2/
+```text
+agentic_ai_task_2/
 |-- app/
 |   |-- main.py
 |   |-- agent.py
@@ -78,89 +85,120 @@ Unlike a basic chatbot, TrendPilot follows an agentic workflow by planning tasks
 
 ### Prerequisites
 
-- Python installed
-- Ollama installed
+Make sure the following are installed:
+
+- Python
+- Ollama
 - Gemma 3:4B model
 
-### Step 1: Download the Model
+### Step 1: Install Ollama
+
+Download and install Ollama from:
+
+https://ollama.com/
+
+### Step 2: Download the Model
+
+Open a terminal and execute:
 
 ```bash
 ollama pull gemma3:4b
 ```
 
-### Step 2: Install Dependencies
+### Step 3: Install Project Dependencies
+
+Navigate to the project directory and run:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 3: Run the Application
+### Step 4: Run the Application
 
-Make sure Ollama is running, then execute:
+Make sure Ollama is running and execute:
 
 ```bash
 python demo.py
 ```
 
-Follow the terminal instructions to enter the topic, select the platform, choose a tone, and select the output type.
+Follow the terminal instructions to enter the topic, select a platform, choose a tone, and select the required output type.
 
 ## 8. Testing
 
-The project was tested using 10 different test cases covering multiple topics, platforms, tones, and output types.
+The project includes 10 documented test cases covering different topics, platforms, tones, and output types.
 
-The test cases and their results are documented in:
+Test cases and their results are available in:
 
 `tests/test_cases.md`
 
-All 10 test cases passed after the improvements.
+The documented test results indicate that all 10 test cases passed after the improvements.
 
 ## 9. Screenshots
 
-The `screenshots/` directory contains:
+The `screenshots/` directory contains project screenshots, including:
 
-- Ollama model verification
-- CLI demo execution
-- Generated and saved content output
+- Ollama model verification.
+- CLI application execution.
+- Generated content and saved file output.
 
-## 10. Final Report
+These screenshots provide visual evidence of the application's execution and output.
+
+## 10. Final Project Report
 
 The final project report is available at:
 
 `report/final_report.pdf`
 
-It documents the project overview, workflow, tools, testing, error analysis, screenshots, and conclusion.
+The report documents:
+
+- Project overview and objectives.
+- Technologies and tools used.
+- Agent workflow.
+- Implementation details.
+- Testing and test results.
+- Error analysis.
+- Screenshots and conclusion.
 
 ## 11. Limitations
 
 - Content generation depends on the locally installed language model.
-- Generated ideas are not verified against live social media trends.
-- Output quality may vary depending on the topic and prompt.
-- Human review is recommended before publishing generated content.
+- The application does not verify generated ideas against live social media trends.
+- Output quality may vary depending on the topic, prompt, and model response.
+- Generated content may require human review before publishing.
+- Model performance depends on the available system resources.
 
 ## 12. Future Improvements
 
-- Integrate live web search for current trends.
-- Add a Streamlit-based user interface.
-- Improve memory using SQLite.
-- Add user feedback and content refinement.
-- Explore larger local language models.
+Potential future enhancements include:
+
+- Integrating live web search for current trends.
+- Developing a Streamlit-based graphical user interface.
+- Improving memory management using SQLite.
+- Adding user feedback and content refinement.
+- Exploring larger local language models.
+- Improving automated content evaluation.
 
 ## 13. Privacy
 
-TrendPilot uses a local language model through Ollama. Prompts are processed by the local model rather than requiring a hosted LLM API.
+TrendPilot uses a local language model through Ollama. Prompts are processed through the locally running model rather than requiring a hosted LLM API.
 
+The application stores generated results and memory locally in project files.
 
-**Program:** AIRI Team - PITB AI Internship
-**Task:** Agentic AI Assistant - Task 2
-**Project:** TrendPilot ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ Local Agentic AI Assistant
+## 14. Assignment Details
+
+- **Program:** AIRI Team - PITB AI Internship
+- **Task:** Agentic AI Assistant - Task 2
+- **Project:** TrendPilot - Local Agentic AI Content Assistant
 
 ## 15. What I Learned
+
+Through this project, I gained practical experience in:
 
 - Running a local language model using Ollama and Gemma 3:4B.
 - Connecting Python applications with the Ollama API using Requests.
 - Understanding agent planning and tool execution.
-- Organizing content generation, review, and file-saving tools.
-- Implementing JSON-based memory.
+- Organizing content generation, review, and file-saving functionality.
+- Implementing JSON-based memory management.
 - Testing AI applications and analyzing errors.
 - Understanding the importance of human review and fact-checking.
 
@@ -170,29 +208,34 @@ TrendPilot uses a local language model through Ollama. Prompts are processed by 
 
 TrendPilot is a local Agentic AI project developed using Python, Ollama, and Gemma 3:4B.
 
-The application accepts a topic, platform, tone, and output type. It creates an execution plan, generates social media content, reviews the output, saves it as a Markdown file, and stores records in JSON memory.
+The application accepts a topic, platform, tone, and output type. It prepares a content generation plan, generates social media content, reviews the output, saves results as Markdown files, and maintains records using JSON-based memory.
 
-The project demonstrates practical implementation of local LLM integration, agent workflows, tool usage, memory management, testing, and error analysis.
+The project demonstrates practical implementation of local LLM integration, agent workflows, content generation, memory management, testing, and error analysis.
 
-**Demo:** Run `python demo.py`
+**Demo Command:**
 
-**Repository:** TrendPilot-Local-Agentic-AI
+`python demo.py`
+
+**GitHub Repository:**
+
+TrendPilot-Local-Agentic-AI
 
 ## 17. LinkedIn Post
 
 I am pleased to share my project, **TrendPilot - Local Agentic AI Content Assistant**, developed as part of the AIRI Team PITB AI Internship Task 2.
 
-Built using Python, Ollama, and Gemma 3:4B, TrendPilot demonstrates a local Agentic AI workflow that plans tasks, generates social media content, reviews results, manages memory, and saves outputs locally.
+Built using Python, Ollama, and Gemma 3:4B, TrendPilot demonstrates a local Agentic AI workflow for generating and reviewing social media content.
 
-Key implementation areas:
+Key implementation areas include:
 
-- Local LLM integration with Ollama
-- Agent planning and tool execution
-- Content generation and review
-- JSON-based memory management
-- Markdown file saving
-- Testing and error analysis across 10 test cases
+- Local LLM integration with Ollama.
+- Agent planning and workflow execution.
+- Social media content generation.
+- Content review and improvement suggestions.
+- JSON-based memory management.
+- Markdown file saving.
+- Testing and error analysis across 10 test cases.
 
-This project helped me gain practical experience in building and testing local Agentic AI applications.
+Working on this project helped me gain practical experience in developing and testing local Agentic AI applications.
 
 #AgenticAI #ArtificialIntelligence #Python #Ollama #LLM #PITB
